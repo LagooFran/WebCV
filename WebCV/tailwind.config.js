@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'programming': "url('/programming.jpg')",
+        'myface': "url('/myface.jpeg')"
       }
     },
   },
