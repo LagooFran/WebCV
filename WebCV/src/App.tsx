@@ -39,13 +39,9 @@ function App() {
               <Tabs>
                 <TabList>
                   <Tab>Lenguages</Tab>
-                  <Tab>Web</Tab>
-                  <Tab>DB</Tab>
-                  <Tab>Extra</Tab>
+                  <Tab>2</Tab>
                 </TabList>
-                <TabPanel>
-                  <h1>hola hola</h1>
-                </TabPanel>
+                <TabPanel></TabPanel>
               </Tabs>
               </div>
             </div>
