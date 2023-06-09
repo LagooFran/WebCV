@@ -1,5 +1,6 @@
 import './App.css'
-
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 function App() {
 
@@ -33,6 +34,16 @@ function App() {
             <div className='\\title\\ mt-6 ml-5'>
               <p className='text-[12px] ml-8'>{"fopen(“my_knoledges.txt”, “r”);"}</p>
               <p className='text-[30px]'>{">>"}My knoledges</p>
+
+              <div className='mt-5 mr-3'>
+              <Tabs>
+                <TabList>
+                  <Tab>Lenguages</Tab>
+                  <Tab>2</Tab>
+                </TabList>
+                <TabPanel></TabPanel>
+              </Tabs>
+              </div>
             </div>
           </div>
         </div>
