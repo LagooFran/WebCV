@@ -8,7 +8,12 @@ export default {
     extend: {
       backgroundImage: {
         'programming': "url('/programming.jpg')",
-        'myface': "url('/myface.jpeg')"
+        'myface': "url('/myface.jpeg')",
+        'cSharp': "url('/c-sharp.png')",
+        'c': "url('/icons/c.png')",
+        'c+': "url('/c+.png')",
+        'js': "url('/js.png')",
+        'python': "url('/python.png')"
       }
     },
   },
