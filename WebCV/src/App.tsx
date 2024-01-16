@@ -2,6 +2,8 @@ import "./App.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Slider from "react-slick";
+import SliderCard from "./Components/sliderCard";
+import SliderCardProjects from "./Components/sliderCardProjects";
 import "./slick.css";
 import "./slick-theme.css";
 
@@ -25,6 +27,8 @@ function App() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  
 
   return (
     <div>
@@ -75,50 +79,11 @@ function App() {
                 <TabPanel>
                   <div className="\\sliderContainer\\ ml-2">
                     <Slider {...settings}>
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/c.png" alt="" />
-                          </div>
-                          <p className="ml-2">C</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/c+.png" alt="" />
-                          </div>
-                          <p className="ml-2">C++</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/js.png" alt="" />
-                          </div>
-                          <p className="ml-2">Javascript</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/c-sharp.png" alt="" />
-                          </div>
-                          <p className="ml-2">C-Sharp</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/python.png" alt="" />
-                          </div>
-                          <p className="ml-2">Python</p>
-                        </div>
-                      </div>
+                      <SliderCard icon="c" text="C"></SliderCard>
+                      <SliderCard icon="c+" text="C++"></SliderCard>
+                      <SliderCard icon="js" text="Javascript"></SliderCard>
+                      <SliderCard icon="c-sharp" text="C#"></SliderCard>
+                      <SliderCard icon="python" text="Python"></SliderCard>
                     </Slider>
                   </div>
                 </TabPanel>
@@ -126,41 +91,10 @@ function App() {
                 <TabPanel>
                   <div className="\\sliderContainer\\ ml-2">
                     <Slider {...settings}>
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/sql.png" alt="" />
-                          </div>
-                          <p className="ml-2">Sql Server</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/mariadb.png" alt="" />
-                          </div>
-                          <p className="ml-2">Maria DB</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/firebird.png" alt="" />
-                          </div>
-                          <p className="ml-2">Firebird</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/firebase.png" alt="" />
-                          </div>
-                          <p className="ml-2">Firebase</p>
-                        </div>
-                      </div>
+                      <SliderCard icon="sql" text="SQL Server"></SliderCard>
+                      <SliderCard icon="mariadb" text="Maria DB"></SliderCard>
+                      <SliderCard icon="firebird" text="Firebird"></SliderCard>
+                      <SliderCard icon="firebase" text="Firebase"></SliderCard>
                     </Slider>
                   </div>
                 </TabPanel>
@@ -168,50 +102,11 @@ function App() {
                 <TabPanel>
                   <div className="\\sliderContainer\\ ml-2">
                     <Slider {...settings}>
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/js.png" alt="" />
-                          </div>
-                          <p className="ml-2">Javascript</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/react.png" alt="" />
-                          </div>
-                          <p className="ml-2">React</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/asp.png" alt="" />
-                          </div>
-                          <p className="ml-2">ASP.net</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/html-5.png" alt="" />
-                          </div>
-                          <p className="ml-2">HTML 5</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/css-3.png" alt="" />
-                          </div>
-                          <p className="ml-2">CSS 3</p>
-                        </div>
-                      </div>
+                      <SliderCard icon="js" text="Javascript"></SliderCard>
+                      <SliderCard icon="react" text="React"></SliderCard>
+                      <SliderCard icon="asp" text="ASP.net"></SliderCard>
+                      <SliderCard icon="html-5" text="HTML 5"></SliderCard>
+                      <SliderCard icon="css-3" text="CSS 3"></SliderCard>
                     </Slider>
                   </div>
                 </TabPanel>
@@ -219,59 +114,12 @@ function App() {
                 <TabPanel>
                   <div className="\\sliderContainer\\ ml-2">
                     <Slider {...settings}>
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/uml.png" alt="" />
-                          </div>
-                          <p className="ml-2">UML</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/agile.png" alt="" />
-                          </div>
-                          <p className="ml-2">Agile</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/xls.png" alt="" />
-                          </div>
-                          <p className="ml-2">Excel</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/github.png" alt="" />
-                          </div>
-                          <p className="ml-2">Github</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/figma.png" alt="" />
-                          </div>
-                          <p className="ml-2">Figma</p>
-                        </div>
-                      </div>
-
-                      <div className="h-[80px] max-w-[150px] flex flex-row mt-6">
-                        <div className="flex flex-row items-center">
-                          <div className="h-[60px] w-[60px] flex">
-                            <img src="/icons/adobe-photoshop.png" alt="" />
-                          </div>
-                          <p className="ml-2">Photoshop</p>
-                        </div>
-                      </div>
+                      <SliderCard icon="uml" text="UML"></SliderCard>
+                      <SliderCard icon="agile" text="Agile"></SliderCard>
+                      <SliderCard icon="xls" text="Excel"></SliderCard>
+                      <SliderCard icon="github" text="GitHub"></SliderCard>
+                      <SliderCard icon="figma" text="Figma"></SliderCard>
+                      <SliderCard icon="adobe-photoshop" text="Photoshop"></SliderCard>
                     </Slider>
                   </div>
                 </TabPanel>
@@ -286,19 +134,8 @@ function App() {
         <div className="flex w-[100%] h-[200px] justify-center">
           <div className="\\slider-container\\ w-[320px] h-[200px] mb-12 ">
             <Slider {...settings2}>
-            <div className="flex h-[180px] max-w-[95%] bg-white">
-                <div className="h-[100px] w-[100%] flex">
-                  <img className="w-[100%]" src="/programming.jpg" alt=""></img>
-                </div>
-                <p className="ml-3 mt-1 text-[20px]">Color changer</p>
-              </div>
-
-              <div className="flex  h-[180px] max-w-[95%] bg-white">
-                <div className="h-[100px] w-[100%] flex">
-                  <img className="w-[100%]" src="/programming.jpg" alt=""></img>
-                </div>
-                <p className="ml-3 mt-1 text-[20px]">More On Github</p>
-              </div>
+              <SliderCardProjects image="programming" text="Color changer"></SliderCardProjects>
+              <SliderCardProjects image="programming" text="More on github"></SliderCardProjects>
             </Slider>
           </div>
         </div>
@@ -309,7 +146,6 @@ function App() {
 
         <div className="\\contactContainer\\ flex w-[100%] h-[200px] justify-center">
             <div className="\\knoledges\\ h-[170px] w-[350px] bg-white shadow-xl">
-
               <div className="h-[50%] w-[100%] flex flex-column gap-10 p-6 justify-center">
                   <a href="https://github.com/LagooFran" className="\\info\\ flex flex-row items-center gap-4">
                     <div className="h-[50px] w-[50px]">
