@@ -302,6 +302,39 @@ function App() {
             </Slider>
           </div>
         </div>
+
+        <div className="\\title\\ mt-8 ml-5 mb-10 self-start">
+          <p className="text-[40px]">{">"}Contact me</p>
+        </div>
+
+        <div className="\\contactContainer\\ flex w-[100%] h-[200px] justify-center">
+            <div className="\\knoledges\\ h-[170px] w-[350px] bg-white shadow-xl">
+
+              <div className="h-[50%] w-[100%] flex flex-column gap-10 p-6 justify-center">
+                  <a href="https://github.com/LagooFran" className="\\info\\ flex flex-row items-center gap-4">
+                    <div className="h-[50px] w-[50px]">
+                      <img className="w-[100%]" src="/icons/github.png" alt=""></img>
+                    </div>
+                    <h2>Github</h2>
+                  </a>
+                  <a href="https://www.linkedin.com/in/franco-lago-b1a59312b/" className="\\info\\ flex flex-row items-center gap-4">
+                    <div className="h-[50px] w-[50px]">
+                      <img className="w-[100%]" src="/icons/linkedin.png" alt=""></img>
+                    </div>
+                    <h2>Linkedin</h2>
+                  </a>
+              </div>
+
+              <a href="mailto:fran080j9@gmail.com" className="\\info\\ flex flex-row items-center gap-4 p-6 h-[50%] w-[100%] ml-2">
+                  <div className="h-[60px] w-[60px]">
+                    <img className="w-[100%]" src="/icons/gmail.png" alt=""></img>
+                  </div>
+                  <h2>fran080j9@gmail.com</h2>
+              </a>
+            </div>
+        </div>
+
+
       </div>
     </div>
   );
