@@ -2,8 +2,8 @@ import "./App.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Slider from "react-slick";
-import SliderCard from "./Components/sliderCard";
-import SliderCardProjects from "./Components/sliderCardProjects";
+import SliderCard from "./Components/SliderCard";
+import SliderCardProjects from "./Components/SliderCardProjects";
 import "./slick.css";
 import "./slick-theme.css";
 
@@ -31,41 +31,43 @@ function App() {
   
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div>
-        <div className="\\cards container\\ flex flex-col w-full h-[750px] items-center gap-10">
-          <div className="\\title\\ mt-4 ml-5 self-start">
-            <p className="text-[40px]">{">"}Franco Lago</p>
-            <p className="text-[30px]">Software Developer;</p>
+        <div className="\\cards container\\ flex flex-col w-full h-[750px] items-center gap-10 lg:flex-row md:h-[1080px] lg:h-[1080px] lg:gap-3 lg:p-10">
+
+          <div className="\\title\\ mt-4 ml-5 self-start md:self-center lg:self-auto lg:mt-0 lg:ml-0 lg:w-[33%] ">
+            <p className="text-[40px] md:text-[40px] lg:text-[60px]">{">"}Franco Lago</p>
+            <p className="text-[30px] md:text-[40px] lg:text-[60px]">Software Developer;</p>
           </div>
-          <div className="\\about me\\ h-[284px] w-[350px] bg-white shadow-xl ">
+
+          <div className="\\about me\\ h-[284px] w-[350px] bg-white shadow-xl md:h-[33%] md:w-[80%] lg:h-[70%] lg:w-[33%]">
             <div className="\\header\\ flex flex-row mt-5 ml-7">
-              <div className="\\img\\ rounded-[200px] h-[80px] w-[80px]">
+              <div className="\\img\\ rounded-[200px] h-[80px] w-[80px] md:self-center">
                 <img className="rounded-[200px]" src="/myface.jpeg" alt="" />
               </div>
               <div className="\\title\\ mt-3 ml-3">
-                <p className="text-[12px]">{"#Include <presentation>"}</p>
-                <p className="text-[30px]">{">>"}About Me</p>
+                <p className="text-[12px] md:text-[17px]">{"#Include <presentation>"}</p>
+                <p className="text-[30px] md:text-[40px]">{">>"}About Me</p>
               </div>
             </div>
 
-            <p className="text-[12px] ml-8 mt-3 max-w-[300px]">
+            <p className="text-[12px] ml-8 mt-3 max-w-[300px] md:text-[18px] md:max-w-[500px] md:mt-6">
               {">"}Im a young computer science student from argentina looking to
               expand my knoledge and to gain experience by working in
               challenging and amazing projects.
             </p>
-            <p className="text-[12px] ml-8 mt-3 max-w-[300px]">
+            <p className="text-[12px] ml-8 mt-3 max-w-[300px] md:text-[18px] md:max-w-[500px] md:mt-6">
               {">"}Im a very comunicative person and i like working with other
               people, im open minded and i enjoy learning new things.
             </p>
           </div>
 
-          <div className="\\knoledges\\ h-[300px] w-[350px] bg-white shadow-xl">
+          <div className="\\knoledges\\ h-[300px] w-[350px] md:h-[33%] md:w-[80%] lg:h-[70%] lg:w-[33%] bg-white shadow-xl">
             <div className="\\title\\ mt-6 ml-5">
-              <p className="text-[12px] ml-8">
+              <p className="text-[12px] ml-8 md:text-[17px]">
                 {"fopen(“my_knoledges.txt”, “r”);"}
               </p>
-              <p className="text-[30px]">{">>"}My knoledges</p>
+              <p className="text-[30px] md:text-[40px]">{">>"}My knoledges</p>
             </div>
             <div className="\\tabs\\ ml-3 mr-3 mt-3">
               <Tabs>
