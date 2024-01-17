@@ -28,12 +28,12 @@ function App() {
     slidesToScroll: 1,
   };
 
-  
+
 
   return (
     <div className="overflow-hidden">
       <div>
-        <div className="\\cards container\\ flex flex-col w-full h-[750px] items-center gap-10 lg:flex-row md:h-[1080px] lg:h-[1080px] lg:gap-3 lg:p-10">
+        <div className="\\cards container\\ flex flex-col w-full h-[750px] items-center gap-10 lg:flex-row md:h-[1080px] lg:h-[900px] lg:gap-3 lg:p-10">
 
           <div className="\\title\\ mt-4 ml-5 self-start md:self-center lg:self-auto lg:mt-0 lg:ml-0 lg:w-[33%] ">
             <p className="text-[40px] md:text-[40px] lg:text-[60px]">{">"}Franco Lago</p>
@@ -129,47 +129,47 @@ function App() {
             </div>
           </div>
         </div>
-
-        <div className="\\title\\ mt-8 ml-5 mb-10 self-start">
-          <p className="text-[40px]">{">"}Projects</p>
-        </div>
-        <div className="flex w-[100%] h-[200px] justify-center">
-          <div className="\\slider-container\\ w-[320px] h-[200px] mb-12 ">
-            <Slider {...settings2}>
-              <SliderCardProjects image="programming" text="Color changer"></SliderCardProjects>
-              <SliderCardProjects image="programming" text="More on github"></SliderCardProjects>
-            </Slider>
+        <div className="md:flex md:flex-row md:justify-center md:ml-[70px] md:w-[80%] md:gap-[80px]">
+          <div className="\\title\\ mt-8 ml-5 mb-10 self-start">
+            <p className="text-[40px] md:text-[50px]">{">"}Projects</p>
+          </div>
+          <div className="flex w-[100%] h-[200px] justify-center">
+            <div className="\\slider-container\\ w-[320px] h-[200px] md:w-[500px] mb-12 ">
+              <Slider {...settings2}>
+                <SliderCardProjects image="programming" text="Color changer"></SliderCardProjects>
+                <SliderCardProjects image="programming" text="More on github"></SliderCardProjects>
+              </Slider>
+            </div>
           </div>
         </div>
-
         <div className="\\title\\ mt-8 ml-5 mb-10 self-start">
           <p className="text-[40px]">{">"}Contact me</p>
         </div>
 
         <div className="\\contactContainer\\ flex w-[100%] h-[200px] justify-center">
-            <div className="\\knoledges\\ h-[170px] w-[350px] bg-white shadow-xl">
-              <div className="h-[50%] w-[100%] flex flex-column gap-10 p-6 justify-center">
-                  <a href="https://github.com/LagooFran" className="\\info\\ flex flex-row items-center gap-4">
-                    <div className="h-[50px] w-[50px]">
-                      <img className="w-[100%]" src="/icons/github.png" alt=""></img>
-                    </div>
-                    <h2>Github</h2>
-                  </a>
-                  <a href="https://www.linkedin.com/in/franco-lago-b1a59312b/" className="\\info\\ flex flex-row items-center gap-4">
-                    <div className="h-[50px] w-[50px]">
-                      <img className="w-[100%]" src="/icons/linkedin.png" alt=""></img>
-                    </div>
-                    <h2>Linkedin</h2>
-                  </a>
-              </div>
-
-              <a href="mailto:fran080j9@gmail.com" className="\\info\\ flex flex-row items-center gap-4 p-6 h-[50%] w-[100%] ml-2">
-                  <div className="h-[60px] w-[60px]">
-                    <img className="w-[100%]" src="/icons/gmail.png" alt=""></img>
-                  </div>
-                  <h2>fran080j9@gmail.com</h2>
+          <div className="\\knoledges\\ h-[170px] w-[350px] bg-white shadow-xl">
+            <div className="h-[50%] w-[100%] flex flex-column gap-10 p-6 justify-center">
+              <a href="https://github.com/LagooFran" className="\\info\\ flex flex-row items-center gap-4">
+                <div className="h-[50px] w-[50px]">
+                  <img className="w-[100%]" src="/icons/github.png" alt=""></img>
+                </div>
+                <h2>Github</h2>
+              </a>
+              <a href="https://www.linkedin.com/in/franco-lago-b1a59312b/" className="\\info\\ flex flex-row items-center gap-4">
+                <div className="h-[50px] w-[50px]">
+                  <img className="w-[100%]" src="/icons/linkedin.png" alt=""></img>
+                </div>
+                <h2>Linkedin</h2>
               </a>
             </div>
+
+            <a href="mailto:fran080j9@gmail.com" className="\\info\\ flex flex-row items-center gap-4 p-6 h-[50%] w-[100%] ml-2">
+              <div className="h-[60px] w-[60px]">
+                <img className="w-[100%]" src="/icons/gmail.png" alt=""></img>
+              </div>
+              <h2>fran080j9@gmail.com</h2>
+            </a>
+          </div>
         </div>
 
 
