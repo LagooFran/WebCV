@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-visible lg:p-7">
       <div>
         <div className="\\cards container\\ flex flex-col w-full h-[750px] items-center gap-10 lg:flex-row md:h-[1080px] lg:h-[900px] lg:gap-3 lg:p-10">
 
@@ -40,23 +40,23 @@ function App() {
             <p className="text-[30px] md:text-[40px] lg:text-[60px]">Software Developer;</p>
           </div>
 
-          <div className="\\about me\\ h-[284px] w-[350px] bg-white shadow-xl md:h-[33%] md:w-[80%] lg:h-[70%] lg:w-[33%]">
+          <div className="\\about me\\ h-[284px] w-[350px] bg-white shadow-xl md:h-[33%] md:w-[80%] lg:h-[70%] lg:w-[33%] lg:p-3">
             <div className="\\header\\ flex flex-row mt-5 ml-7">
-              <div className="\\img\\ rounded-[200px] h-[80px] w-[80px] md:self-center">
+              <div className="\\img\\ rounded-[200px] h-[80px] w-[80px] md:self-center lg:h-[130px] lg:w-[130px]">
                 <img className="rounded-[200px]" src="/myface.jpeg" alt="" />
               </div>
               <div className="\\title\\ mt-3 ml-3">
-                <p className="text-[12px] md:text-[17px]">{"#Include <presentation>"}</p>
-                <p className="text-[30px] md:text-[40px]">{">>"}About Me</p>
+                <p className="text-[12px] md:text-[17px] lg:text-[20px]">{"#Include <presentation>"}</p>
+                <p className="text-[30px] md:text-[40px] lg:text-[50px]">{">>"}About Me</p>
               </div>
             </div>
 
-            <p className="text-[12px] ml-8 mt-3 max-w-[300px] md:text-[18px] md:max-w-[500px] md:mt-6">
+            <p className="text-[12px] ml-8 mt-3 max-w-[300px] md:text-[18px] md:max-w-[500px] md:mt-6 lg:text-[25px]">
               {">"}Im a young computer science student from argentina looking to
               expand my knoledge and to gain experience by working in
               challenging and amazing projects.
             </p>
-            <p className="text-[12px] ml-8 mt-3 max-w-[300px] md:text-[18px] md:max-w-[500px] md:mt-6">
+            <p className="text-[12px] ml-8 mt-3 max-w-[300px] md:text-[18px] md:max-w-[500px] md:mt-6 lg:text-[25px]">
               {">"}Im a very comunicative person and i like working with other
               people, im open minded and i enjoy learning new things.
             </p>
@@ -129,52 +129,57 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="md:flex md:flex-row md:justify-center md:ml-[70px] md:w-[80%] md:gap-[80px] md:h-[250px]">
-          <div className="\\title\\ mt-8 ml-5 mb-10 self-start">
-            <p className="text-[40px] md:text-[50px]">{">"}Projects</p>
-          </div>
-          <div className="flex w-[100%] h-[200px] justify-center">
-            <div className="\\slider-container\\ w-[320px] h-[200px] md:w-[500px] mb-12 ">
-              <Slider {...settings2}>
-                <SliderCardProjects image="programming" text="Color changer"></SliderCardProjects>
-                <SliderCardProjects image="programming" text="More on github"></SliderCardProjects>
-              </Slider>
+
+        <div className="md:flex md:flex-col items-center lg:gap-10">
+          <div className="md:flex md:flex-row md:justify-center md:w-[80%] md:gap-[80px] md:h-[250px] lg:gap-[40px]">
+            <div className="\\title\\ mt-8 ml-5 mb-10 self-start lg:self-center">
+              <p className="text-[40px] md:text-[50px]">{">"}Projects</p>
+            </div>
+            <div className="flex w-[100%] h-[200px] justify-center md:justify-end lg:self-center">
+              <div className="\\slider-container\\ w-[320px] h-[200px] md:w-[500px] mb-12">
+                <Slider {...settings2}>
+                  <SliderCardProjects image="programming" text="Color changer"></SliderCardProjects>
+                  <SliderCardProjects image="programming" text="More on github"></SliderCardProjects>
+                </Slider>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="md:flex md:flex-row md:justify-center md:w-[80%] md:gap-[80px] md:mt-[60px] md:self-center md:ml-[70px]">
-          <div className="\\title\\ mt-8 ml-5 mb-10 self-start">
-            <p className="text-[40px] md:text-[50px]">{">"}Contact me</p>
-          </div>
+          <div className="md:flex md:flex-row md:justify-center md:w-[80%] md:gap-[80px] md:h-[250px] lg:gap-[40px]">
+            <div className="\\title\\ mt-8 ml-5 mb-10 self-start whitespace-nowrap lg:self-center">
+              <p className="text-[40px] md:text-[50px]">{">"}Contact me</p>
+            </div>
 
-          <div className="\\contactContainer\\ flex w-[100%] h-[200px] justify-center md:w-[500px]">
-            <div className="\\knoledges\\ h-[170px] w-[350px] md:w-[500px] md:h-[200px] bg-white shadow-xl">
-              <div className="h-[50%] w-[100%] flex flex-column gap-10 p-6 justify-center md:gap-[60px]">
-                <a href="https://github.com/LagooFran" className="\\info\\ flex flex-row items-center gap-4">
-                  <div className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]">
-                    <img className="w-[100%]" src="/icons/github.png" alt=""></img>
+            <div className="flex w-[100%] h-[200px] justify-center md:justify-end md:mt-7 lg:mt-0 lg:self-center">
+
+              <div className="\\contacts\\ h-[170px] w-[350px] md:w-[500px] md:h-[200px] bg-white shadow-xl lg:h-[250px]">
+                <div className="h-[50%] w-[100%] flex flex-column gap-10 p-6 justify-center md:gap-[60px]">
+                  <a href="https://github.com/LagooFran" className="\\info\\ flex flex-row items-center gap-4">
+                    <div className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]">
+                      <img className="w-[100%]" src="/icons/github.png" alt=""></img>
+                    </div>
+                    <h2>Github</h2>
+                  </a>
+                  <a href="https://www.linkedin.com/in/franco-lago-b1a59312b/" className="\\info\\ flex flex-row items-center gap-4">
+                    <div className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]">
+                      <img className="w-[100%]" src="/icons/linkedin.png" alt=""></img>
+                    </div>
+                    <h2>Linkedin</h2>
+                  </a>
+                </div>
+
+                <a href="mailto:fran080j9@gmail.com" className="\\info\\ flex flex-row items-center gap-4 p-6 h-[50%] w-[100%] ml-2 md:justify-center">
+                  <div className="h-[60px] w-[60px] md:h-[70px] md:w-[70px]">
+                    <img className="w-[100%]" src="/icons/gmail.png" alt=""></img>
                   </div>
-                  <h2>Github</h2>
-                </a>
-                <a href="https://www.linkedin.com/in/franco-lago-b1a59312b/" className="\\info\\ flex flex-row items-center gap-4">
-                  <div className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]">
-                    <img className="w-[100%]" src="/icons/linkedin.png" alt=""></img>
-                  </div>
-                  <h2>Linkedin</h2>
+                  <h2>fran080j9@gmail.com</h2>
                 </a>
               </div>
-
-              <a href="mailto:fran080j9@gmail.com" className="\\info\\ flex flex-row items-center gap-4 p-6 h-[50%] w-[100%] ml-2 md:justify-center">
-                <div className="h-[60px] w-[60px] md:h-[70px] md:w-[70px]">
-                  <img className="w-[100%]" src="/icons/gmail.png" alt=""></img>
-                </div>
-                <h2>fran080j9@gmail.com</h2>
-              </a>
             </div>
-          </div>
 
+          </div>
         </div>
+
 
 
 
