@@ -62,7 +62,7 @@ function App() {
             </p>
           </div>
 
-          <div className="\\knoledges\\ h-[300px] w-[350px] md:h-[33%] md:w-[80%] lg:h-[70%] lg:w-[33%] bg-white shadow-xl">
+          <div className="\\knoledges\\ h-[300px] w-[350px] md:h-[33%] md:w-[80%] lg:h-[70%] lg:w-[33%] bg-white shadow-xl lg:ml-7">
             <div className="\\title\\ mt-6 ml-5">
               <p className="text-[12px] ml-8 md:text-[17px]">
                 {"fopen(“my_knoledges.txt”, “r”);"}
@@ -130,7 +130,7 @@ function App() {
           </div>
         </div>
 
-        <div className="md:flex md:flex-col items-center lg:gap-10">
+        <div className="md:flex md:flex-col items-center lg:gap-10 lg:flex-row">
           <div className="md:flex md:flex-row md:justify-center md:w-[80%] md:gap-[80px] md:h-[250px] lg:gap-[40px]">
             <div className="\\title\\ mt-8 ml-5 mb-10 self-start lg:self-center">
               <p className="text-[40px] md:text-[50px]">{">"}Projects</p>
