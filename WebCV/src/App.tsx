@@ -86,6 +86,7 @@ function App() {
                       <SliderCard icon="js" text="Javascript"></SliderCard>
                       <SliderCard icon="c-sharp" text="C#"></SliderCard>
                       <SliderCard icon="python" text="Python"></SliderCard>
+                      <SliderCard icon="ruby" text="Ruby"></SliderCard>
                     </Slider>
                   </div>
                 </TabPanel>
@@ -109,6 +110,7 @@ function App() {
                       <SliderCard icon="asp" text="ASP.net"></SliderCard>
                       <SliderCard icon="html-5" text="HTML 5"></SliderCard>
                       <SliderCard icon="css-3" text="CSS 3"></SliderCard>
+                      <SliderCard icon="rails" text="Ruby on rails"></SliderCard>
                     </Slider>
                   </div>
                 </TabPanel>
@@ -138,8 +140,9 @@ function App() {
             <div className="flex w-[100%] h-[200px] justify-center md:justify-end lg:self-center">
               <div className="\\slider-container\\ w-[320px] h-[200px] md:w-[500px] mb-12">
                 <Slider {...settings2}>
-                  <SliderCardProjects image="programming" text="Color changer"></SliderCardProjects>
-                  <SliderCardProjects image="programming" text="More on github"></SliderCardProjects>
+                  <SliderCardProjects image="colors" text="Color changer" link="https://github.com/LagooFran/ColorChanger"></SliderCardProjects>
+                  <SliderCardProjects image="QuadResolv" text="CuadResolv" link="https://github.com/LagooFran/QuadResolv"></SliderCardProjects>
+                  <SliderCardProjects image="programming" text="More on github" link="https://github.com/LagooFran"></SliderCardProjects>
                 </Slider>
               </div>
             </div>
